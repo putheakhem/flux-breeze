@@ -4,8 +4,7 @@ use App\Livewire\Actions\Logout;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Volt\Component;
 
-new class extends Component
-{
+new class extends Component {
     public string $password = '';
 
     /**
@@ -56,7 +55,7 @@ new class extends Component
                 </div>
 
                 <div class="flex gap-2">
-                    <flux:spacer />
+                    <flux:spacer/>
 
                     <flux:modal.close>
                         <flux:button variant="ghost">Cancel</flux:button>

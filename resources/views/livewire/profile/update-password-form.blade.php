@@ -6,8 +6,7 @@ use Illuminate\Validation\Rules\Password;
 use Illuminate\Validation\ValidationException;
 use Livewire\Volt\Component;
 
-new class extends Component
-{
+new class extends Component {
     public string $current_password = '';
     public string $password = '';
     public string $password_confirmation = '';
@@ -51,7 +50,7 @@ new class extends Component
 
     <form wire:submit="updatePassword" class="mt-6 space-y-6">
         <div>
-            <flux:input wire:model="current_password" type="password" label="{{__('Current Password')}}" />
+            <flux:input wire:model="current_password" type="password" label="{{__('Current Password')}}"/>
         </div>
 
         <div>
